@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    padding:.75em 1.5em;
+    background-color: $color-cyan;
+    border-radius: 1.5em;
+    line-height: 1;
+    min-width: 15em;
+    text-align:center;
+    text-decoration: none;
+    border: none;
+    color: $color-white;
+    -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+}

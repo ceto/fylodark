@@ -1,0 +1,25 @@
+.testicard {
+    background-color: $color-db4;
+    margin:0;
+    padding:calc(1.25em + 1.5%) calc(1em + 1.5%);
+    //font-size:.875rem;
+    max-width: 36em;
+    border-radius: .25rem;
+    cite {
+        display: block;
+        font-weight: $global-weight-bold;
+        font-style: normal;
+        margin-top: 1.5rem;
+        img {
+            max-width: 2.666em;
+            border-radius: 50%;
+            float:left;
+            margin:0 .666em 0 0;
+        }
+        span {
+            display:block;
+            font-size: 75%;
+            font-weight: $global-weight-normal;
+        }
+    }
+}

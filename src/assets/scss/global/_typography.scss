@@ -1,0 +1,15 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    line-height: 1.4;
+}
+p {
+    margin:0 0 1em;
+}
+
+a {
+    color: inherit;
+    &:hover, &:focus {
+        color: $color-blue;
+    }
+}

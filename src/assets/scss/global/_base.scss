@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+    font-size: $global-font-size;
+    @include breakpoint(60em) {
+        font-size: 15px;
+    }
+    @include breakpoint(80em) {
+        font-size: 16px;
+    }
+    @include breakpoint(120em) {
+        font-size: 17px;
+    }
+}
+
+// Set box-sizing globally to handle padding and border widths
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-db2;
+    color: $color-white;
+    font-family: $body-font-family;
+    font-weight: $global-weight-normal;
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+    -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+
+}
+
+
+img {
+    // Get rid of gap under images by making them display: inline-block; by default
+    display: inline-block;
+    vertical-align: middle;
+
+    // Grid defaults to get images and embeds to work properly
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+  }
+  
+.screen-reader, .screen-reader-text {
+    position: absolute!important;
+    clip: rect(1px,1px,1px,1px);
+}

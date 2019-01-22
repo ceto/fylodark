@@ -1,0 +1,18 @@
+.pagewrap {
+    //max-width: 90%;
+    margin:0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    width:100%;
+    @include breakpoint(100em) {
+        padding-left: calc(50vw - #{$global-width/2});
+        padding-right: calc(50vw - #{$global-width/2});
+    }
+
+    &--full {
+        @include breakpoint(100em) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }   
+    }
+}

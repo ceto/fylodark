@@ -1,0 +1,15 @@
+.siteheader {
+    padding-top: calc(2vw + .5rem);
+    padding-bottom: calc(2vw + .5rem);
+    background-color: $color-db1;
+    display: flex;
+    align-items: center;
+    &__navblock {
+        margin-left:auto;
+    }
+}
+
+.sitelogo {
+    display: flex;
+
+}
