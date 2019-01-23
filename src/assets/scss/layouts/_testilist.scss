@@ -2,10 +2,32 @@
     margin:0;
     padding:0;
     list-style: none;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 1rem;
+    
+    &:before {
+        content:'';
+        display: block;
+        width: calc(1rem + 1vw);
+        height:calc(1rem + 1vw);
+        position: absolute;
+        margin-top: calc(-2rem - 1vw);
+        //margin-left: calc(-.5rem - 1vw);
+        //top:-2rem;
+        background-image: url(../img/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 100% auto;
+
+    }
+
+    @include breakpoint(768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     > li {
-        margin:0 0 1rem;
+        margin:0 0;
         padding:0;
     }
 }

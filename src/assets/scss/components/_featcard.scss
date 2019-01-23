@@ -1,0 +1,23 @@
+.featcard {
+    position: relative;
+    //border: 1px solid $color-cyan;
+    text-align: center;
+    padding: calc(3.5rem + 1.5%) 0;
+    //font-size:.875rem;
+    max-width: 35rem;
+    margin:0 auto;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 30%;
+        max-width: 5.5rem;
+        transform: translateX(-50%) translateY(-50%); 
+    }
+
+    h3 {
+        margin:0 0 .5em;
+        font-size:1.333rem;
+    }
+}
