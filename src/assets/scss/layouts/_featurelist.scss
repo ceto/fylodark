@@ -5,7 +5,7 @@
     max-width: 66rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 15%;
+    grid-column-gap: 13%;
     grid-row-gap: 5rem;
     @include breakpoint(768px) {
         grid-template-columns: 1fr 1fr;

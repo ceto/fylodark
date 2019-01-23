@@ -1,0 +1,53 @@
+.mainmenu {
+    list-style: none;
+    margin:0 0;
+    padding: 0;
+    display: flex;
+    > li {
+        white-space: nowrap;
+        + li {
+           
+        }
+        a {
+            display: block;
+            padding:.5em 1em;
+            text-decoration: none;
+            font-size:1.125rem;
+
+        }
+    }
+
+}
+
+.footermenu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0;
+    > li {
+        margin: 0;
+        padding: 0;
+        + li {
+            margin-top:.5rem;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.sociallinks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0;
+    > li {
+        margin: 0;
+        padding: 0;
+        + li {
+            margin-top:.5rem;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
