@@ -38,16 +38,35 @@
 .sociallinks {
     list-style: none;
     padding: 0;
-    margin: 0 0;
-    > li {
+    margin: 0 0 0 -.333em;
+    text-align: center;
+    font-size:1rem;
+    line-height: 1;
+    @include breakpoint(768px) {
+        text-align: left;
+    }
+    @include breakpoint(1024px) {
+        text-align: right;
+    }
+    > li { 
         margin: 0;
         padding: 0;
+        display: inline-block;
         + li {
             margin-top:.5rem;
         }
         a {
+            display: inline-block;
+            padding: 12.5% 0 0;
+            margin:0 .333em;
+            border:1px solid currentcolor;
+            border-radius:50%;
+            width:2.125em;
+            height:2.125em;
             text-decoration: none;
+            text-align: center;
         }
     }
 
 }
+

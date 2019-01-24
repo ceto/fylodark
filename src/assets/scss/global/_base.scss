@@ -54,10 +54,14 @@ img {
 input[type="email"], input[type="text"], input[type="search"] {
     appearance: none;
     border-radius: 1.5rem;
-    border:none;
+    border:1px solid $color-db2;
+    background-color: $color-white;
     outline: none;
     font-size:.875rem;
     padding:.875rem 1.5rem;
     line-height: 1;
     min-width:22em;
+    &:focus {
+        border-color: $color-blue;
+    }
 }

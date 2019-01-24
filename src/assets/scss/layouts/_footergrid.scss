@@ -1,13 +1,18 @@
 .sitefooter > img {
-    margin-bottom: calc(.5rem + 1vw);
-    max-width: 33%;
+    margin-bottom: calc(.666rem + 1vw);
+    margin-left:3rem;
+    max-width: 40%;
+    @include breakpoint(768px) {
+        margin-left:0;
+    }
+
 
 }
 
 .footergrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 5%;
+    grid-column-gap: 10%;
     grid-row-gap: 3rem;
     @include breakpoint(600px) {
         //grid-template-columns: 2fr 1fr;
@@ -23,3 +28,22 @@
     }
 }
 
+
+.contacts {
+    > p {
+        position: relative;
+        padding-left: 3rem;
+        //text-indent: -3rem;
+        .icon {
+            font-size: 1.666em;
+            position: absolute;
+            width: 2rem;
+            margin-left: -3rem;
+            //margin-top: -.125rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
