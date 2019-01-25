@@ -15,6 +15,8 @@ import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
 
+import ghpages  from 'gh-pages';
+
 var rename      = require('gulp-rename');
 var svgstore    = require('gulp-svgstore');
 var svgmin      = require('gulp-svgmin');
@@ -43,6 +45,19 @@ gulp.task('build',
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
   gulp.series('build', server, watch));
+
+// 'gulp deploy' -- pushes your dist folder to Github
+gulp.task('deploy',
+    gulp.series('build', copycname, deployment)
+);
+
+
+function copycname() {
+    return gulp.src('CNAME').pipe(gulp.dest(PATHS.dist));
+}
+function deployment() {
+    return ghpages.publish(PATHS.dist);
+};
 
 // Delete the "dist" folder
 // This happens every time a build starts
