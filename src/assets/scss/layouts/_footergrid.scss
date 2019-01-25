@@ -19,31 +19,15 @@
     }
     @include breakpoint(768px) {
         grid-template-columns: 3fr 1fr 1fr;
+        grid-column-gap: 5%;
     }
     @include breakpoint(1024px) {
         grid-template-columns: 4fr 1fr 1fr 2fr;
+        
+
     }
-    @include breakpoint(1200px) {
-        grid-template-columns: 3fr 1fr 1fr 2fr;
-    }
+    // @include breakpoint(1200px) {
+    //     grid-template-columns: 3fr 1fr 1fr 2fr;
+    // }
 }
 
-
-.contacts {
-    > p {
-        position: relative;
-        padding-left: 3rem;
-        //text-indent: -3rem;
-        .icon {
-            font-size: 1.666em;
-            position: absolute;
-            width: 2rem;
-            margin-left: -3rem;
-            //margin-top: -.125rem;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    }
-}

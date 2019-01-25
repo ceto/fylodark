@@ -38,7 +38,7 @@
 .sociallinks {
     list-style: none;
     padding: 0;
-    margin: 0 0 0 -.333em;
+    margin: 0 0;
     text-align: center;
     font-size:1rem;
     line-height: 1;
@@ -52,12 +52,9 @@
         margin: 0;
         padding: 0;
         display: inline-block;
-        + li {
-            margin-top:.5rem;
-        }
         a {
             display: inline-block;
-            padding: 12.5% 0 0;
+            padding: 10.666% 0 0;
             margin:0 .333em;
             border:1px solid currentcolor;
             border-radius:50%;

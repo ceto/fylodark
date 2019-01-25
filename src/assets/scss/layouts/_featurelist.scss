@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 13%;
-    grid-row-gap: 5rem;
+    grid-row-gap: 2rem;
     @include breakpoint(768px) {
         grid-template-columns: 1fr 1fr;
     }
